@@ -6,6 +6,7 @@ import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/estudiantes")
@@ -25,5 +26,9 @@ public class EstudianteController {
     @GetMapping
     public List<Estudiante> listar() {
         return service.listar();
+    }
+    @RequestMapping(value="/buscar", params="email")
+    public Optional<Estudiante> buscar(@RequestParam String email){
+        return service.buscar(email);
     }
 }

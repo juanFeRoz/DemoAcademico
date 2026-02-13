@@ -5,6 +5,7 @@ import co.edu.demoacademico.repository.EstudianteRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EstudianteService {
@@ -38,5 +39,12 @@ public class EstudianteService {
         // Consulta vía Repository
         // ============================
         return repository.findAll();
+    }
+    public Optional<Estudiante> buscar(String email) {
+        // ============================
+        // ZONA DE ACCESO A LA BD:
+        // Consulta vía Repository
+        // ============================
+        return repository.findByEmail(email);
     }
 }
