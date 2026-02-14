@@ -26,6 +26,14 @@
 
 	<dependencies>
 
+		<!-- Dependencia de SpringDoc OpenAPI para Swagger UI -->
+		<!--acceder http://localhost:8080/swagger-ui.html-->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+
 		<!-- Web (REST Controllers) -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
