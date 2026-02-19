@@ -4,6 +4,7 @@ import co.edu.demoacademico.model.Estudiante;
 import co.edu.demoacademico.repository.EstudianteRepository;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,11 +41,15 @@ public class EstudianteService {
         // ============================
         return repository.findAll();
     }
-    public Optional<Estudiante> buscar(String email) {
+    public Optional<Estudiante> buscar(String email) throws EstudianteNoEncontrado{
         // ============================
         // ZONA DE ACCESO A LA BD:
         // Consulta vía Repository
         // ============================
-        return repository.findByEmail(email);
+        Optional<Estudiante> estudiante = repository.findByEmail(email);
+        if (estudiante.isEmpty()) {
+            throw new EstudianteNoEncontrado("Estudiante no encontrado");
+        }
+        return estudiante;
     }
 }
