@@ -1,4 +1,4 @@
-package co.edu.demoacademico.service;
+package co.edu.demoacademico.exception;
 
 public class EstudianteNoEncontrado extends RuntimeException{
    public EstudianteNoEncontrado(String message) {

@@ -1,10 +1,11 @@
 package co.edu.demoacademico.service;
 
+import co.edu.demoacademico.exception.EstudianteNoEncontrado;
+import co.edu.demoacademico.exception.EstudianteYaExiste;
 import co.edu.demoacademico.model.Estudiante;
 import co.edu.demoacademico.repository.EstudianteRepository;
 import org.springframework.stereotype.Service;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,7 +25,7 @@ public class EstudianteService {
         // Regla: email único
         // ----------------------------
         repository.findByEmail(estudiante.getEmail()).ifPresent(e -> {
-            throw new IllegalStateException("Email ya registrado");
+            throw new EstudianteYaExiste("Email ya registrado");
         });
 
         // ============================
@@ -41,7 +42,7 @@ public class EstudianteService {
         // ============================
         return repository.findAll();
     }
-    public Optional<Estudiante> buscar(String email) throws EstudianteNoEncontrado{
+    public Optional<Estudiante> buscar(String email) throws EstudianteNoEncontrado {
         // ============================
         // ZONA DE ACCESO A LA BD:
         // Consulta vía Repository
