@@ -17,7 +17,7 @@ public class GlobalExceptionHandler {
     }
 
     @ExceptionHandler(value = EstudianteYaExiste.class)
-    @ResponseStatus(HttpStatus.FORBIDDEN)
+    @ResponseStatus(HttpStatus.CONFLICT)
     public @ResponseBody EstudianteYaExiste handleEstudianteYaExiste(EstudianteYaExiste e) {
         return new EstudianteYaExiste(e.getMessage());
     }
