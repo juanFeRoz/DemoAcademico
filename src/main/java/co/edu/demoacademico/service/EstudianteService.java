@@ -23,7 +23,7 @@ public class EstudianteService {
         // Regla: email único
         // ----------------------------
         repository.findByEmail(estudiante.getEmail()).ifPresent(e -> {
-            throw new IllegalStateException("Email ya registrado");
+            throw new EmailDuplicadoException(estudiante.getEmail());
         });
 
         // ============================
