@@ -27,6 +27,8 @@ public class EstudianteController {
     public List<Estudiante> listar() {
         return service.listar();
     }
+    @GetMapping("/pagina")
+
     @RequestMapping(method = RequestMethod.GET, value="/buscar", params="email")
     public Optional<Estudiante> buscar(@RequestParam String email){
         return service.buscar(email);

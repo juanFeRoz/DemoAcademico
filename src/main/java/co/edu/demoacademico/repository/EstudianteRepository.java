@@ -12,5 +12,6 @@ public interface EstudianteRepository extends JpaRepository<Estudiante, Long> {
     // ============================
     // ZONA DE ACCESO A LA BD (JPA)
     // ============================
+    boolean existsByEmail(String email);
     Optional<Estudiante> findByEmail(String email);
 }

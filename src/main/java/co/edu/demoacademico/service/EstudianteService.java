@@ -3,6 +3,8 @@ package co.edu.demoacademico.service;
 import co.edu.demoacademico.model.Estudiante;
 import co.edu.demoacademico.repository.EstudianteRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 import java.util.Optional;
@@ -22,10 +24,9 @@ public class EstudianteService {
         // ZONA DE LÓGICA DE NEGOCIO:
         // Regla: email único
         // ----------------------------
-        repository.findByEmail(estudiante.getEmail()).ifPresent(e -> {
+        if (repository.existsByEmail(estudiante.getEmail())) {
             throw new EmailDuplicadoException(estudiante.getEmail());
-        });
-
+        }
         // ============================
         // ZONA DE ACCESO A LA BD:
         // Persistencia vía Repository
@@ -40,7 +41,11 @@ public class EstudianteService {
         // ============================
         return repository.findAll();
     }
-    public Optional<Estudiante> buscar(String email) throws EstudianteNoEncontradoException {
+    public Page<Estudiante> listar(Pageable pageable) {
+        return repository.findAll(pageable);
+    }
+
+    public Optional<Estudiante> buscarPorEmail(String email) throws EstudianteNoEncontradoException {
         // ============================
         // ZONA DE ACCESO A LA BD:
         // Consulta vía Repository
