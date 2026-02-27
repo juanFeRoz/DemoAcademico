@@ -4,6 +4,9 @@ import co.edu.demoacademico.model.Estudiante;
 import co.edu.demoacademico.service.EstudianteService;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
+import org.springdoc.core.annotations.ParameterObject;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 import java.util.Optional;
@@ -27,10 +30,16 @@ public class EstudianteController {
     public List<Estudiante> listar() {
         return service.listar();
     }
-    @GetMapping("/pagina")
 
-    @RequestMapping(method = RequestMethod.GET, value="/buscar", params="email")
-    public Optional<Estudiante> buscar(@RequestParam String email){
-        return service.buscar(email);
+    // Ejemplo: /api/estudiantes/pagina?page=0&size=5&sort=nombre,asc
+    @GetMapping("/pagina")
+    public Page<Estudiante> listarPaginado(@ParameterObject Pageable pageable) {
+        return service.listar(pageable);
+    }
+
+    // Ejemplo: /api/estudiantes/buscar?email=ana@demo.com
+    @GetMapping("/buscar")
+    public Estudiante buscarPorEmail(@RequestParam String email) {
+        return service.buscarPorEmail(email);
     }
 }

@@ -38,3 +38,7 @@ spring:
       swagger-ui:
         enabled: true
         path: '/swagger-ui.html'
+  app:
+    seed:
+      enabled: true
+      cantidad: 500
