@@ -1,39 +1,18 @@
 package co.edu.demoacademico.service;
 
 import co.edu.demoacademico.model.Estudiante;
-import co.edu.demoacademico.repository.EstudianteRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Service;
 
-import java.util.List;
+public interface EstudianteService {
 
-@Service
-public class EstudianteService {
+    Estudiante crear(Estudiante e);
 
-    private final EstudianteRepository repository;
+    Estudiante obtenerPorId(Long id);
 
-    public EstudianteService(EstudianteRepository repository) {
-        this.repository = repository;
-    }
+    Page<Estudiante> listar(Pageable pageable);
 
-    public Estudiante crear(Estudiante estudiante) {
-        if (repository.existsByEmail(estudiante.getEmail())) {
-            throw new EmailDuplicadoException(estudiante.getEmail());
-        }
-        return repository.save(estudiante);
-    }
+    Estudiante actualizar(Long id, Estudiante e);
 
-    public List<Estudiante> listar() {
-        return repository.findAll();
-    }
-
-    public Page<Estudiante> listar(Pageable pageable) {
-        return repository.findAll(pageable);
-    }
-
-    public Estudiante buscarPorEmail(String email) {
-        return repository.findByEmail(email)
-                .orElseThrow(() -> new EstudianteNoEncontradoException(email));
-    }
+    void eliminar(Long id);
 }
