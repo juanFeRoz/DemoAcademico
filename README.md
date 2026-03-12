@@ -22,7 +22,7 @@ La aplicación arranca en: `http://localhost:8080`
 | H2 Console  | http://localhost:8080/h2-console |
 
 **Credenciales H2:**
-- JDBC URL: `jdbc:h2:mem:testdb`
+- JDBC URL: `jdbc:h2:mem:demoacademico`
 - Usuario: `sa`
 - Contraseña: *(vacía)*
 
