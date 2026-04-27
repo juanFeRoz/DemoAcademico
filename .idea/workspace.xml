@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a57eaeef-ed05-4419-935a-a65577c98434" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/config/AuthDataSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/dto/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/model/AuthUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/repository/AuthUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/security/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/security/TokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/java/co/edu/authservice/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/auth-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/client/AuthFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/dto/TokenValidationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/security/TokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/service/TokenValidationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/DemoAcademicoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/DemoAcademicoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/controller/AsignaturaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/dto/AsignaturaCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/dto/AsignaturaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/handler/AsignaturaHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/model/Asignatura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/repository/AsignaturaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/service/AsignaturaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/asignaturas/service/AsignaturaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/common/api/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/common/api/ResponseBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/common/controller/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/common/exception/BusinessException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/common/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/config/DataSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/config/DataSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/config/DataSeederAcademico.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/java/co/edu/demoacademico/config/DataSeederAcademico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/controller/EstudianteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/dto/EstudianteCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/dto/EstudianteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/dto/EstudianteUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/handler/EstudianteHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/model/Estudiante.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/port/EstudianteQueryPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/repository/EstudianteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/service/EstudianteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/estudiantes/service/EstudianteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/controller/GrupoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/dto/GrupoCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/dto/GrupoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/handler/GrupoHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/model/Grupo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/port/GrupoQueryPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/repository/GrupoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/service/GrupoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/grupos/service/GrupoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/controller/MatriculaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/dto/MatriculaCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/dto/MatriculaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/handler/MatriculaHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/model/Matricula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/repository/MatriculaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/service/MatriculaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/matriculas/service/MatriculaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/controller/ProgramaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/dto/ProgramaCreateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/dto/ProgramaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/dto/ProgramaUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/handler/ProgramaHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/model/Programa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/repository/ProgramaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/service/ProgramaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/demoacademico/programas/service/ProgramaServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data_omitir.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/main/resources/data_omitir.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/edu/demoacademico/DemoAcademicoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/src/test/java/co/edu/demoacademico/DemoAcademicoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/DemoAcademicoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/target/classes/co/edu/demoacademico/DemoAcademicoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/controller/AsignaturaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/dto/AsignaturaCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/dto/AsignaturaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/handler/AsignaturaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/model/Asignatura.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/repository/AsignaturaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/service/AsignaturaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/asignaturas/service/AsignaturaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/common/api/ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/common/api/ResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/common/controller/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/common/exception/BusinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/common/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/config/DataSeeder.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/target/classes/co/edu/demoacademico/config/DataSeeder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/config/DataSeederAcademico.class" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/target/classes/co/edu/demoacademico/config/DataSeederAcademico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/controller/EstudianteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/dto/EstudianteCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/dto/EstudianteDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/dto/EstudianteUpdateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/handler/EstudianteHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/model/Estudiante.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/port/EstudianteQueryPort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/repository/EstudianteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/service/EstudianteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/estudiantes/service/EstudianteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/controller/GrupoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/dto/GrupoCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/dto/GrupoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/handler/GrupoHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/model/Grupo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/port/GrupoQueryPort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/repository/GrupoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/service/GrupoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/grupos/service/GrupoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/controller/MatriculaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/dto/MatriculaCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/dto/MatriculaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/handler/MatriculaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/model/Matricula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/repository/MatriculaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/service/MatriculaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/matriculas/service/MatriculaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/controller/ProgramaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/dto/ProgramaCreateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/dto/ProgramaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/dto/ProgramaUpdateDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/handler/ProgramaHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/model/Programa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/repository/ProgramaRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/service/ProgramaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/demoacademico/programas/service/ProgramaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data_omitir.sql" beforeDir="false" afterPath="$PROJECT_DIR$/microservicios-demoacademico/consulta-service/target/classes/data_omitir.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-academico-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/demo-academico-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/co/edu/demoacademico/DemoAcademicoApplicationTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3Cx91wbHp4fMYji73KyZts4Sx6l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JAR Application.demo-academico-0.0.1-SNAPSHOT.jar.executor": "Run",
+    "Maven.consulta-service [clean,package...].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "Lab4",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/RHP/Documents/GitHub/DemoAcademico",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\RHP\Documents\GitHub\DemoAcademico\microservicios-demoacademico\consulta-service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package -DskipTests" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="demo-academico-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/demo-academico-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="DemoAcademico" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.demo-academico-0.0.1-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a57eaeef-ed05-4419-935a-a65577c98434" name="Changes" comment="" />
+      <created>1777316145784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777316145784</updated>
+      <workItem from="1777316160174" duration="32000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
